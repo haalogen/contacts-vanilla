@@ -15,9 +15,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.13",
-    "webpack": "^3.8.1"
-  },
-  "dependencies": {
+    "webpack": "^3.8.1",
     "whatwg-fetch": "^2.0.3"
   }
 }

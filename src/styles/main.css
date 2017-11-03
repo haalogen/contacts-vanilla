@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Poiret One", cursive;
+  font-size: 28px;
+  color: #222;
+  transition: all 0.5s;
+}
+.hidden {
+  display: none;
+}
+.contacts {
+  margin: 0 auto;
+  max-width: 550px;
+  height: 90vh;
+  overflow-y: scroll;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  /* form.contacts__add-contact */
+  /* .contacts__contacts-list */
+}
+.contacts .contacts__heading {
+  margin: 0;
+}
+.contacts .contacts__search-box {
+  min-width: 400px;
+  border: 2px solid #777;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  left: 0;
+}
+.contacts form.contacts__add-contact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #777;
+  border-radius: 5px;
+  background-color: rgba(0, 50, 0, 0.1);
+}
+.contacts form.contacts__add-contact p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contacts form.contacts__add-contact p label {
+  width: 50px;
+  padding: 5px;
+}
+.contacts form.contacts__add-contact p input,
+.contacts form.contacts__add-contact p textarea {
+  border: 2px solid #777;
+  background-color: rgba(0, 50, 0, 0.2);
+  flex: 3;
+  margin-right: 10px;
+}
+.contacts .contacts__contacts-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* .contacts-list__item */
+}
+.contacts .contacts__contacts-list .contacts-list__item {
+  text-align: left;
+  max-width: 95%;
+  list-style: none;
+  border-bottom: 1px solid #222;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 20px;
+  /* .contact-header */
+  /* .contacts-list__item:hover */
+}
+.contacts .contacts__contacts-list .contacts-list__item .contact-header {
+  display: flex;
+  justify-content: space-between;
+  /* .remove-btn */
+}
+.contacts .contacts__contacts-list .contacts-list__item .contact-header a {
+  text-decoration: none;
+}
+.contacts .contacts__contacts-list .contacts-list__item .contact-header .remove-btn {
+  border: 0;
+  padding: 0;
+  min-width: 40px;
+  display: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.contacts .contacts__contacts-list .contacts-list__item .contact-header .remove-btn:hover {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+.contacts .contacts__contacts-list .contacts-list__item .card {
+  font-size: 0.75em;
+}
+.contacts .contacts__contacts-list .contacts-list__item .card img {
+  width: 50px;
+  margin: 0;
+}
+.contacts .contacts__contacts-list .contacts-list__item:hover {
+  background-color: rgba(0, 0, 255, 0.2);
+  cursor: pointer;
+}
+.contacts .contacts__contacts-list .contacts-list__item:hover .remove-btn {
+  display: inline;
+}
+/* .contacts */
+footer {
+  height: 10vh;
+  display: flex;
+  background-color: #222;
+  justify-content: space-around;
+  align-items: center;
+}
+footer p {
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  color: #ddd;
+}

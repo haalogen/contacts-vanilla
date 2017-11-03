@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакты | Contacts</title>
+  <link rel="stylesheet" href="src/styles/normalize.css">
+  <link rel="stylesheet" href="src/styles/font-awesome/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+
+<div class="contacts">
+  <h1 class="contacts__heading">Контакты | Contacts</h1>
+
+  <div class="btn-bar">
+    <button class="search-box-btn">
+      <i class="fa fa-search"></i>
+    </button>
+    <button class="populate-list-btn">
+      <i class="fa fa-users"></i>
+      <i class="fa fa-plus"></i>
+    </button>
+    <button class="add-contact-btn">
+      <i class="fa fa-user-plus"></i>
+    </button>
+    <button class="pull-contacts-btn">
+      <i class="fa fa-cloud-download"></i>
+    </button>
+    <button class="push-contacts-btn" >
+      <i class="fa fa-cloud-upload"></i>
+    </button>
+  </div>
+
+  <form class="contacts__add-contact hidden">
+    <p>
+      <label for="name"><i class="fa fa-user"></i></label>
+      <input type="text" name="name" value="Вася Пупкин">
+    </p>
+    <p>
+      <label for="info"><i class="fa fa-info"></i></label>
+      <textarea name="info" placeholder="Стажировка JS" cols="30"></textarea>
+    </p>
+    <p>
+      <label for="tel"><i class="fa fa-phone"></i></label>
+      <input type="tel" name="tel" value="88005553535">
+    </p>
+    <p>
+      <label for="vk"><i class="fa fa-vk"></i></label>
+      <input type="text" name="vk" placeholder="mustang2004">
+    </p>
+    <p>
+      <label for="telegram"><i class="fa fa-paper-plane-o"></i></label>
+      <input type="text" name="telegram" value="Dangerous">
+    </p>
+    <p>
+      <label for="image"><i class="fa fa-file-image-o"></i></label>
+      <textarea name="image" placeholder="path/to/img.jpg" cols="30"></textarea>
+    </p>
+
+    <button type="submit"><i class="fa fa-floppy-o"></i> Сохранить</button>
+  </form>
+
+  <input type="text" class="contacts__search-box hidden" placeholder="Введите запрос">
+
+  <ul class="contacts__contacts-list">
+  </ul>
+</div> <!-- ./contacts -->
+
+<footer>
+  <p>Stanislav Nikitin | Copyright 2017</p>
+  <p>Inspired by IOS 7 and Telegram</p>
+</footer>
+
+
+<script src="build/bundle.js"></script>
+</body>
+</html>

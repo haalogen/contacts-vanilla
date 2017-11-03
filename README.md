@@ -1,5 +1,7 @@
 # contacts-vanilla
-Practice #2 on JS internship in Digital Economy League
+Practice #2 on JS internship in Digital Economy League.
+
+[Online demo](https://haalogen.github.io/contacts-vanilla/) using Github Pages.
 
 ### How to get running
 ```bash

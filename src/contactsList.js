@@ -1,3 +1,6 @@
+import 'whatwg-fetch'; // Global Fetch polyfill
+
+
 // Global "state" array of contacts data
 const contacts = new Map();
 const sampleData = [];

@@ -3,7 +3,7 @@ var webpack = require("webpack");
 
 
 module.exports = {
-  entry: './src/contactsList.js', // путь к вашему главному js файлу
+  entry:  ['whatwg-fetch', './src/contactsList.js'], // путь к вашему главному js файлу
 
   output: {
     filename: 'bundle.js',
